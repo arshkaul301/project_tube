@@ -1,0 +1,48 @@
+.SideBarRow{
+    display:flex;
+    align-items: center;
+    height: 42px;
+    color:#4C4B4B;
+    width: 250px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size:15px;
+}
+
+.SideBarRow:focus{
+    outline: none;
+}
+
+.SideBarRow:hover{
+    background-color: lightgray;
+}
+
+.SideBarRow:hover > .SideBarIcon{
+    color:red;
+}
+
+.SideBarIcon{
+    margin-left: 28px;
+}
+
+.SideBarTitle{
+    margin-left: 20px;
+    margin-top: -2.25px;
+}
+
+.SideBarRow .SideBarRow-Tooltip{
+    visibility: hidden;
+    background-color: #3A3939;
+    color: #fff;
+    border:2px solid white;
+    text-align: center;
+    padding: 2.5px 5px 2.5px 5px;
+    font-size: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.SideBarRow:hover .SideBarRow-Tooltip{
+    visibility: visible;
+}

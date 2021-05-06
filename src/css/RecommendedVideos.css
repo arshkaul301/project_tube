@@ -1,0 +1,15 @@
+.RecommendedVideos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FAFAFA;
+    padding:82px 35px 0px 35px;
+}
+
+.Reload{
+    flex:0 0 100%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+

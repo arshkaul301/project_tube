@@ -1,0 +1,32 @@
+.Header-Options-Dropdown-Content{
+    display:flex;
+    align-items: center;
+    z-index: 1;
+    width:300px;
+    height:45px;
+    background-color: white;
+    position:relative;
+}
+
+.Header-Options-Dropdown-Content:hover{
+    background-color: #EFEEEE;
+}
+
+.Header-Options-Dropdown-Content-Icon1{
+    color:#979595;
+    padding-left:15px;
+    font-size: 27.5px !important;
+}
+
+.Header-Options-Dropdown-Content-Title{
+    color:black;
+    padding-left: 15px;
+    font-size:15px;
+}
+
+.Header-Options-Dropdown-Content-Icon2{
+    color:#979595;
+    right:17.5px;
+    position: absolute;
+    font-size: 15px !important;
+}

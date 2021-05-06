@@ -1,0 +1,221 @@
+.Header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+}
+
+.Header2-On {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+}
+
+.Header-Input {
+    display: flex;
+    width: 80%;
+    margin-right: 30px;
+}
+
+.Header-Input>input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.Header-Input>input:focus {
+    outline: none;
+}
+
+.Header-Input>input::placeholder {
+    font-size: 16px;
+}
+
+.Header-SearchIcon-Small {
+    width: 70px;
+    background-color: #fafafa;
+    border: 1px solid lightgray;
+    border-left: 0px;
+    color: gray;
+    height: 32px;
+    cursor: pointer;
+}
+
+.Header-SearchIcon-Small:focus {
+    outline: none;
+}
+
+.Header-SearchIcon-Small:hover {
+    color: #575757;
+}
+
+.Header-Off {
+    display: none !important;
+}
+
+.Header-Logo {
+    height: 40px;
+    width: 100px;
+}
+
+.Header-Overlay-Off {
+    display: none;
+}
+
+.Header-Overlay-On {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.Header-Start {
+    display: flex;
+    align-items: center;
+    margin-left: 11.25px;
+}
+
+.Header-Middle {
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+
+.Header-Middle>input {
+    width: 100%;
+    height: 30px;
+    flex: 1;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.Header-Middle>input:focus {
+    outline: none;
+}
+
+.Header-Middle>input::placeholder {
+    font-size: 16px;
+}
+
+.Header-End {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header-SideBar, .Header-Options, .Header-SignIn {
+    background: none;
+    border: none;
+}
+
+.Header-SideBar:focus {
+    outline: none;
+}
+
+.Header-SearchIcon {
+    width: 60px !important;
+    background-color: #fafafa;
+    border: 1px solid lightgray;
+    border-left: 0px;
+    color: gray;
+    height: 32px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.Header-SearchIcon:focus {
+    outline: none;
+}
+
+.Header-SearchIcon:hover {
+    color: #575757;
+}
+
+.Header-Options-Dropdown {
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 5px;
+    margin-top:5px;
+    border-top:none;
+    border-right: 1px solid #C7C7C7;
+    border-left: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.Header-Options-Start{
+    position: relative;
+}
+
+.Header-Options:focus {
+    outline: none;
+}
+
+.Header-SignIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 110px;
+    border: 2px solid black;
+    margin-right: 30px;
+    font-size: 16px;
+    color: blue;
+    border-color: blue;
+    transition: 0.01s;
+    cursor: pointer;
+}
+
+.Header-SignIn:active {
+    background-color: lightgray;
+}
+
+.Header-SignIn:focus {
+    outline: none;
+}
+
+.Header-UserIcon {
+    padding-right: 6px;
+}
+
+@media (max-width: 650px) {
+    .Header-Middle>input {
+        display: none;
+    }
+    .Header-Middle {
+        justify-content: flex-end;
+    }
+    .Header-SearchIcon {
+        background-color: white;
+        border: none;
+        color: gray;
+        height: 35px;
+        cursor: pointer;
+        margin-top: 3px;
+    }
+    .Header-Options {
+        display: none !important;
+    }
+}
